@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contactsumit.ca</title>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <h1>Contact Sumit</h1>
+                <p>Hey there , fill out the form to reach me!</p>
+            </header>
+
+            <!-- 
+                OBJECTIVE:
+
+                Add a form that collects user information
+                and user queries. Submit the form to Netlify
+                for processing.
+             -->
+             <form action="./thanks.html" netlify method="post">
+                <fieldset>
+                    <legend>User Information</legend>
+                    <p>
+                        <label for="firstName">First Name:</label><br>
+                        <input type="text" name="firstName" id="firstName">
+                    </p>
+
+                    <p>
+                        <label for="lastName">Last Name:</label><br>
+                        <input type="text" name="lastName" id="lastName">
+                    </p>
+                    <p>
+                        <label for="dateOfBirth">Date Of Birth:</label><br>
+                        <input type="date" name="dateOfBirth" id="dateOfBirth">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="text" name="email" id="email">
+    
+                    </p>
+                    <p>
+                        <label for="phone">Phone</label><br>
+                        <input type="number" name="phone" id="phone">
+                    </p>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Query</legend>
+                    <p>Check the applicable:</p>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="careerOppurtinity" id="careerOppurtinity" value="movies">
+                            <label for="careerOppurtinity">Career Oppurtinity</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="businessProposal" id="businessProposal" value="businessProposal">
+                            <label for="businessProposal">Business Proposal</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="generalQuery" id="generalQuery" value="generalQuery">
+                            <label for="generalQuery">General Query</label>
+
+                        </li>
+                        <li>
+                            <input type="checkbox" name="complaint" id="complaint" value="complaint">
+                            <label for="complaint">Complaint</label>
+                        </li>
+                        
+                        
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Message</legend>
+                    <p>
+                        <label for="message">Message</label><br>
+                        <input type="text" name="text" id="text">
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="submit">
+                </p>
+                 
+
+             </form>
+        </main>
+    </body>
+</html>
